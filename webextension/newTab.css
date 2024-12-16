@@ -397,6 +397,21 @@ svg {
 :root[titlesize="large"] .newtab-thumbnail {
 	margin-bottom: 30px;
 }
+:root[tabCorners="rounded-4"] .newtab-thumbnail {
+	border-radius: 4px;
+}
+:root[tabCorners="rounded-16"] .newtab-thumbnail {
+	border-radius: 16px;
+}
+:root[tabCorners="rounded-160"] .newtab-thumbnail {
+	border-radius: 160px;
+}
+:root[tabCorners="rounded-1000"] .newtab-thumbnail {
+	border-radius: 1000px;
+}
+:root[tabCorners="notRounded"] .newtab-thumbnail {
+	border-radius: 0;
+}
 /* TITLES */
 .newtab-title {
 	position: absolute;

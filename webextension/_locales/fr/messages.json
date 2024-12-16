@@ -104,6 +104,12 @@
 	"options_size_small": {
 		"message": "Réduite"
 	},
+	"options_tab_rounded": {
+		"message": "avec"
+	},
+	"options_tab_not_rounded": {
+		"message": "sans"
+	},
 	"options_theme": {
 		"message": "Thème"
 	},
@@ -115,6 +121,9 @@
 	},
 	"options_thumb_titlesize": {
 		"message": "Taille des titres"
+	},
+	"options_thumb_tabCorners": {
+		"message": "Bords arrondis"
 	},
 	"pin_url_button": {
 		"message": "Ajouter"

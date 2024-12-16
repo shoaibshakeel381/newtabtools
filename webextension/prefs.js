@@ -14,6 +14,7 @@ var Prefs = {
 	_margin: ['small', 'small', 'small', 'small'],
 	_spacing: 'small',
 	_titleSize: 'small',
+	_tabCorners: 'rounded-4',
 	_locked: false,
 	_history: true,
 	_recent: true,
@@ -34,6 +35,7 @@ var Prefs = {
 			'margin',
 			'spacing',
 			'titleSize',
+			'tabCorners',
 			'locked',
 			'history',
 			'recent',
@@ -82,6 +84,9 @@ var Prefs = {
 		}
 		if (['hidden', 'small', 'medium', 'large'].includes(prefs.titleSize)) {
 			this._titleSize = prefs.titleSize;
+		}
+		if (['rounded-4', 'rounded-16', 'rounded-160', 'rounded-1000', 'notRounded'].includes(prefs.tabCorners)) {
+			this._tabCorners = prefs.tabCorners;
 		}
 		if ('locked' in prefs) {
 			this._locked = prefs.locked === true;

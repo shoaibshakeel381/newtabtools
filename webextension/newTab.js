@@ -410,6 +410,9 @@ var newTabTools = {
 		case 'titleSize':
 			Prefs[name] = value;
 			break;
+		case 'tabCorners':
+			Prefs[name] = value;
+			break;
 		case 'opacity':
 		case 'rows':
 		case 'columns':
@@ -744,6 +747,12 @@ var newTabTools = {
 			let titleSize = Prefs.titleSize;
 			document.querySelector('[name="titleSize"]').value = titleSize;
 			document.documentElement.setAttribute('titlesize', titleSize);
+		}
+
+		if (!keys || keys.includes('tabCorners')) {
+			let tabCorners = Prefs.tabCorners;
+			document.querySelector('[name="tabCorners"]').value = tabCorners;
+			document.documentElement.setAttribute('tabCorners', tabCorners);
 		}
 
 		if (!keys || keys.includes('margin')) {

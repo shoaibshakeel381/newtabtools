@@ -180,6 +180,12 @@
 	"options_size_small": {
 		"message": "Small"
 	},
+	"options_tab_rounded": {
+		"message": "with"
+	},
+	"options_tab_not_rounded": {
+		"message": "without"
+	},
 	"options_theme": {
 		"message": "Theme"
 	},
@@ -194,6 +200,9 @@
 	},
 	"options_thumb_titlesize": {
 		"message": "Tile title size"
+	},
+	"options_thumb_tabCorners": {
+		"message": "Rounded Corners"
 	},
 	"pin_url_button": {
 		"message": "Add"
