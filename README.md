@@ -1,5 +1,4 @@
-As you can probably tell from the long list of unanswered issues, I clearly don't have time for this. This Github project will now be put in read-only mode.
+This is a fork of newTabTools from DarkTrojan, not maintained anymore
+The new features are only translated in French and English
 
-Since 2018 I have been working full-time developing Thunderbird, and even if I did have any spare time outside of work, the last thing I would want to do is maintain more code, especially as it's the same tools and processes as my day job.
-
-Thank you to everybody who has supported New Tab Tools over the years, by donating, translating the text, sending pull requests, or helping others.
+Add "choose the thumbnail corners rounded or not"
