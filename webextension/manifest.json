@@ -1,13 +1,13 @@
 {
 	"name": "__MSG_extensionName__",
 	"description": "__MSG_extensionDescription__",
-	"version": "92.1",
+	"version": "92.3",
 	"icons": {
 		"48": "images/icon.svg"
 	},
 	"applications": {
 		"gecko": {
-			"id": "newtabtools@raithfall",
+			"id": "shoaibshakeel381@newtabtools",
 			"strict_min_version": "91.0"
 		}
 	},

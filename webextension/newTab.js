@@ -809,37 +809,37 @@ var newTabTools = {
 				this.recentList.removeChild(element);
 			}
 
-			function recent_onclick() {
-				chrome.sessions.restore(this.dataset.sessionId);
-				return false;
-			}
+			// function recent_onclick() {
+			// 	chrome.sessions.restore(this.dataset.sessionId);
+			// 	return false;
+			// }
 
-			for (let item of undoItems) {
-				if (!item.tab || item.tab.incognito) {
-					continue;
-				}
+			// for (let item of undoItems) {
+			// 	if (!item.tab || item.tab.incognito) {
+			// 		continue;
+			// 	}
 
-				let {url, title, sessionId, favIconUrl} = item.tab;
+			// 	let {url, title, sessionId, favIconUrl} = item.tab;
 
-				let a = document.createElementNS(HTML_NAMESPACE, 'a');
-				a.href = url;
-				a.className = 'recent';
-				a.title = (!title || title == url ? title : title + '\n' + url);
-				a.dataset.sessionId = sessionId;
-				a.onclick = recent_onclick;
-				if (favIconUrl && newTabTools.isValidURL(favIconUrl)) {
-					let favIcon = document.createElement('img');
-					favIcon.classList.add('favicon');
-					favIcon.onerror	= function() {
-						this.remove();
-					};
-					favIcon.src = favIconUrl;
-					a.appendChild(favIcon);
-				}
-				a.appendChild(document.createTextNode(title || url));
-				this.recentList.appendChild(a);
-				added++;
-			}
+			// 	let a = document.createElementNS(HTML_NAMESPACE, 'a');
+			// 	a.href = url;
+			// 	a.className = 'recent';
+			// 	a.title = (!title || title == url ? title : title + '\n' + url);
+			// 	a.dataset.sessionId = sessionId;
+			// 	a.onclick = recent_onclick;
+			// 	if (favIconUrl && newTabTools.isValidURL(favIconUrl)) {
+			// 		let favIcon = document.createElement('img');
+			// 		favIcon.classList.add('favicon');
+			// 		favIcon.onerror	= function() {
+			// 			this.remove();
+			// 		};
+			// 		favIcon.src = favIconUrl;
+			// 		a.appendChild(favIcon);
+			// 	}
+			// 	a.appendChild(document.createTextNode(title || url));
+			// 	this.recentList.appendChild(a);
+			// 	added++;
+			// }
 			this.trimRecent();
 			this.recentList.hidden = !added;
 		});
